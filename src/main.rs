@@ -1,12 +1,9 @@
-// fn factorial(n: i32) -> i32 {
-//     match n {
-//         0..=1 => n,
-//         _ => factorial(n-1)*n
-//     }
-// }
+use factorial::factorial;
 
+/// main function testing factorial function
 fn main() {
-    let n = 10;
-    let f = factorial(n);
-    println!("Factroial of {}: {}", n, f);
+    println!("### Testing factorial function ###");
+    println!("{}! = {:.2}", 5, factorial(5));
+    println!("{}! = {:.2E}", 20, factorial(20));
+    println!("Function returns i64 is used because max(i32) = {:E} and max(i64) = {:E}", i32::MAX, i64::MAX)
 }
